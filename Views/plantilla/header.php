@@ -15,6 +15,8 @@
   <link href="<?= PLANTILLA ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="<?= PLANTILLA ?>css/estilos.css" rel="stylesheet" type="text/css">
 
+  <link href="<?= PLANTILLA ?>css/chosen.min.css" rel="stylesheet">
+
   <!-- Custom styles for this template-->
   <link href="<?= PLANTILLA ?>css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -24,6 +26,8 @@
 </head>
 
 <body id="page-top">
+
+<?php if(Accesos::getDatos('validado')):?>
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -104,7 +108,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="personal">
+        <a class="nav-link" href="<?= BASE_URL ?>personal">
           <i class="fas fa-users"></i>
           <span>Personal</span>
         </a>
@@ -317,3 +321,5 @@
 
         </nav>
         <!-- End of Topbar -->
+
+<?php endif;?>

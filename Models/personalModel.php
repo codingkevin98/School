@@ -24,6 +24,19 @@
               )
           );
       }
+
+      public function upd($datos){
+        $this->_db->prepare("UPDATE personal SET nombre = :nom,edad = :eda, puesto = :pue WHERE id = :id")->execute(array(
+            "id" => $datos['id'],
+            "nom" => $datos['nombre'],
+            "eda" => $datos['edad'],
+            "pue" => $datos['cargo']
+        ));
+      }
+
+      public function del($id){
+        $this->prepare("DELETE FROM personal WHERE id = :idPer")->execute(array("idPer" => $id));
+        }
     }
 
     ?>

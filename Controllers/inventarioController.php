@@ -9,6 +9,7 @@
 
         public function index()
         {
+            Accesos::acceso('admin')
             $this->_view->renderizar('index');
         }
     }

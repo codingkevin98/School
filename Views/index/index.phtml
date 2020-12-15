@@ -1,8 +1,19 @@
  <!-- Begin Page Content -->
- <div class="container-fluid">
+ <div class="container">
 
-<!-- Page Heading -->
-<h1 class="h3 mb-4 text-gray-800">Bienvenido Kevin Jimenez</h1>
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800">Bienvenido Kevin Jimenez</h1>
+
+    <div class="row mb-5">
+        <a data-filter="*" href="" class="btn btn-info col-3">Todos</a>
+        <a data-filter=".cat1" href="" class="btn btn-danger col-3">Cat1</a>
+        <a data-filter=".cat2" href="" class="btn btn-success col-3">Cat2</a>
+        <a data-filter=".cat3" href="" class="btn btn-warning col-3">Cat3</a>
+    </div>
+    <div class="row">
+             <?= $this->datos ?>
+    </div>
+   
 
 
 

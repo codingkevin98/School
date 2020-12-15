@@ -9,6 +9,7 @@
 
         public function index()
         {
-            $this->_view->renderizar('index');
+            if(Accesos::getDatos('validado')) $this->_view->renderizar('index');
+            else $this->redireccionar('login');
         }
     }

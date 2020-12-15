@@ -35,7 +35,7 @@
         <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="<?=BASE_URL?>login/salir">Logout</a>
         </div>
       </div>
     </div>
@@ -55,9 +55,16 @@
   <script src="<?= PLANTILLA ?>vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="<?= PLANTILLA ?>vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
+  <!-- sweet alert -->
+  <script src="<?= PLANTILLA ?>js/sweetalert2.js"></script>
+  
+
   <!-- Page level custom scripts -->
   <script src="<?= PLANTILLA ?>js/demo/datatables-demo.js"></script>
   <script src="<?= PLANTILLA ?>js/crud.js"></script>
+
+  <script src="<?= PLANTILLA ?>js/chosen.jquery.min"></script>
+  <script src="<?= PLANTILLA ?>js/isotope.min"></script>
 
 
 </body>
